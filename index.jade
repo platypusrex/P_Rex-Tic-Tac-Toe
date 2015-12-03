@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+   head
+      meta(charset="utf-8")
+      meta(http-equiv="X-UA-Compatible", content="IE-edge")
+      meta(name="viewport", content="width=device-width, initial-scale=1")
+      title P_Rex Tic-Tac-Toe
+      link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css", rel="stylesheet")
+      link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css", rel="stylesheet")
+      link(href="http://fonts.googleapis.com/css?family=Walter+Turncoat", rel="stylesheet", type="text/css")
+      link(href="http://fonts.googleapis.com/css?family=Josefin+Sans", rel="stylesheet", type="text/css")
+      link(href="css/styles.css", rel="stylesheet")
+   body
+      div.game-container
+         div.container
+            h1(class="text-center") Choose a player and press START!
+            form.form(class="text-center")
+               div.form-group
+                  div.btn-group(data-toggle="buttons")
+                     label.btn(class="btn-default player1") Player 1
+                        input(type="radio", name="player", value="player1")
+                     label.btn(class="btn-default player2") Player 2
+                        input(type="radio", name="player", value="player2")
+               div.form-group
+                  button.btn(class="btn-primary btn-lg start" type="button") Start Game!
+         div.container-fixed
+            div.row
+               div(class="col-xs-4 sq1", value="1")
+               div(class="col-xs-4 sq2", value="2")
+               div(class="col-xs-4 sq3", value="3")
+            div.row
+               div(class="col-xs-4 sq4", value="4")
+               div(class="col-xs-4 sq5", value="5")
+               div(class="col-xs-4 sq6", value="6")
+            div.row
+               div(class="col-xs-4 sq7", value="7")
+               div(class="col-xs-4 sq8", value="8")
+               div(class="col-xs-4 sq9", value="9")
+      div.container(class="overlay")
+         p.lead(class="text-center")
+         i.error
+   script(src="js/game.js")
+   script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+   script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
+
+
+
+

@@ -1,0 +1,104 @@
+h1 {
+    margin: 40px 0 0 0;
+    letter-spacing: 1px;
+    font-family: 'Walter Turncoat', cursive;
+}
+
+.form {
+    margin: 45px 0 0 0;
+}
+
+.button-group{
+    margin: 30px 0;
+    text-align: center;
+}
+
+.btn {
+    /*margin: 0 5px;*/
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+.start {
+    margin-top: 5px;
+}
+
+.btn-primary {
+    box-shadow: 0 6px 0 0 #007299;
+}
+
+.btn-primary:active {
+    background: #33a6cc;
+    box-shadow: none;
+    margin-bottom: -6px;
+    margin-top: 6px;
+}
+
+.container-fixed {
+    margin: 6% auto;
+    max-width: 420px;
+}
+
+.col-xs-4 {
+    background-color: #B0B0B0;
+    border-radius: 10px;
+    margin: 5px;
+    height: 140px;
+    width: 140px;
+    text-align: center;
+}
+
+.game {
+    color: #B0B0B0;
+    font-size: 80px;
+    line-height: 140px;
+}
+
+.overlay {
+    opacity: 0;
+    background-color: #404040;
+    height: 40vh;
+    width: 70vh;
+    margin: 8% auto 0;
+    border-radius: 8px;
+    text-align: center;
+    display: none;
+}
+
+.lead {
+    margin: 15% auto;
+    font-family: 'Walter Turncoat', cursive;
+    color: #fff;
+}
+
+.fa-5x {
+    color: #006dcc;
+    display: block;
+    font-size: 90px;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 450px) {
+    .container-fixed {
+        max-width: 300px;
+    }
+
+    .col-xs-4 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .fa {
+        font-size: 50px;
+        line-height: 100px
+    }
+
+    .overlay {
+        height: 25vh;
+        width: 50vh;
+    }
+
+    .fa-5x {
+        line-height: 15px;
+    }
+}
